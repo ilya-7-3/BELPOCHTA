@@ -1,0 +1,20 @@
+.admin__title{
+    margin: 0 auto;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 97px;
+}
+.second__page a{
+    margin-right: 30px;
+}
+.second__page{
+    padding-top: 15px;
+    height: 1129px;
+    background-image: url('../../../img/secondBack.png');
+}
+.second__page .cart{
+    margin-top: 10px;
+}

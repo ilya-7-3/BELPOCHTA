@@ -1,0 +1,19 @@
+.arrow__img{
+    width: 71px;
+    height: 71px;
+    background-color: #00000059;
+    border-radius: 50%;
+}
+.arrow__img img{
+    margin-top: 27%;
+}
+.first__slider{
+    background-size: 100%;
+    background-image: url('../../img//image1.png') ;
+    height: 608px;
+}
+.second__slider{
+    background-size: 100%;
+    background-image: url('../../img//image2.png') ;
+    height: 608px;
+}

@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { store } from './app/store';
+import store from './store';
+import App from './components/app/App';
 import { Provider } from 'react-redux';
-import * as serviceWorker from './serviceWorker';
+import Weather from './service/index'
+import { WeatherProvider } from './components/context/index';
+import ErrorBoundry from './components/errorBoundry/index';
+import {BrowserRouter as Router} from 'react-router-dom';
+import './i18n';
+
+const weather=new Weather();
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Provider store={store}>
+        <WeatherProvider value={weather}>
+          <ErrorBoundry>
+            <Router>
+              <App/>
+            </Router>
+          </ErrorBoundry>
+        </WeatherProvider>
+      </Provider>
+    </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

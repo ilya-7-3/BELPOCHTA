@@ -1,0 +1,35 @@
+.navbar{
+    background-color: #009DE9;
+    color: white;
+    font-size: 30px;
+    padding-left:50px;
+    padding-right: 50px;
+    padding-top: 9px;
+    padding-bottom: 4px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.weather{
+    margin-left: 53px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.weather__img{
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+.date{
+    text-transform: lowercase;
+}
+.translate{
+    background: transparent;
+    border: none;
+    margin-left: 5px;  
+    vertical-align: bottom;
+}
+.translate:focus{
+    outline: none; 
+}

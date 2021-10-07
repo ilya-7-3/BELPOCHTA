@@ -1,0 +1,13 @@
+.carts{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#second{
+    margin-left:1px;
+    margin-right: 1px;
+}
+.first__page{
+    height: 1129px;
+    background-image: url('../../../img/pageFirstBack.png');
+}

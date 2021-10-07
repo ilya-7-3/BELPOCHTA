@@ -1,0 +1,15 @@
+.third__page{
+    padding: 15px 30px 0px 30px;
+    height: 1129px;
+    background-image: url('../../../img/secondBack.png');
+}
+.text{
+    margin: 0 auto;
+    width: 884px;
+    text-align: left;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color:black;
+}

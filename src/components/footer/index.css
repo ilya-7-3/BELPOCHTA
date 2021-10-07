@@ -1,0 +1,47 @@
+footer{
+    background-color: #009DE9;
+    padding-bottom: 9px;
+}
+footer span{
+    font-size: 1.7rem;
+}
+footer .logo{
+    margin-top: 7px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.descr__logo{
+    display: flex;
+    justify-content: center;
+}
+.descr{
+    width: 305px;
+    margin-top: 19.5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: white;
+}
+.descr__logo .second{
+    text-align: left;
+}
+.develop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.develop__descr{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: white;
+    text-decoration: none !important;
+}
+.develop__company{
+    margin: 0px 19px 0px 19px;
+}
